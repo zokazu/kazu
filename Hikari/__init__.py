@@ -23,11 +23,11 @@ from ptbcontrib.postgres_persistence import PostgresPersistence
 StartTime = time.time()
 
 def get_user_list(__init__, key):
-    with open("{}/PrimeMega/{}".format(os.getcwd(), __init__), "r") as json_file:
+    with open("{}/Hikari/{}".format(os.getcwd(), __init__), "r") as json_file:
         return json.load(json_file)[key]
 
 # enable logging
-FORMAT = "[PrimeMega] %(message)s"
+FORMAT = "[Hikari] %(message)s"
 logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
@@ -37,7 +37,7 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.INFO)
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 
-LOGGER = logging.getLogger('[PrimeMega]')
+LOGGER = logging.getLogger('[Hikari]')
 LOGGER.info("Prime is starting. | An Prime Mega Parts. | Licensed under GPLv3.")
 LOGGER.info("Not affiliated to other anime or Villain in any way whatsoever.")
 LOGGER.info("Project maintained by: github.com/Tonic990 (t.me/Bukan_guudlooking)")
@@ -134,7 +134,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from PrimeMega.config import Development as Config
+    from Hikari.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -229,7 +229,7 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
 
-from PrimeMega.modules.sql import SESSION
+from Hikari.modules.sql import SESSION
 
 defaults = tg.Defaults(run_async=True)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
@@ -299,7 +299,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from PrimeMega.modules.helper_funcs.handlers import (
+from Hikari.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
