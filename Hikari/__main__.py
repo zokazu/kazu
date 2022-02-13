@@ -6,12 +6,12 @@ import time
 import re
 import sys
 import traceback
-import Rex.modules.sql.users_sql as sql
+import Hikari.modules.sql.users_sql as sql
 from sys import argv
 from typing import Optional
 from telegram import __version__ as peler
 from platform import python_version as memek
-from Rex import (
+from Hikari import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -32,9 +32,9 @@ from Rex import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from Rex.modules import ALL_MODULES
-from Rex.modules.helper_funcs.chat_status import is_user_admin
-from Rex.modules.helper_funcs.misc import paginate_modules
+from Hikari.modules import ALL_MODULES
+from Hikari.modules.helper_funcs.chat_status import is_user_admin
+from Hikari.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
