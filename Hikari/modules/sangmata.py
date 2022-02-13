@@ -1,10 +1,7 @@
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-from Hikari
-
-
-from Hikari import telethn as tbot
-from Hikari.events import register
-from Hikari import ubot2 as ubot
+from PrimeMega import telethn as tbot
+from PrimeMega.events import register
+from PrimeMega import ubot2 as ubot
 from asyncio.exceptions import TimeoutError
 
 
