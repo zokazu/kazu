@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-🌼 I'm an anime-theme management bot [🌼](https://telegra.ph/file/2d22dc1fec0273ad7a0a2.jpg)
+🌼 I'm an anime-theme management bot [🌼](https://telegra.ph/file/7771bb2497ae0cce78ae4.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -97,12 +97,12 @@ buttons = [
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try inline!", switch_inline_query_current_chat=""
+            text="Try inline!🌼", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text=" Add Hikari  Robot To Your Group ", url="t.me/HikariManageRobot?startgroup=new"),
+            text="➕ Add Hikari  Robot To Your Group ➕", url="t.me/HikariManageRobot?startgroup=new"),
     ],
 ]
 
