@@ -1,5 +1,5 @@
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-from Hiraki
+from Hikari
 
 
 from Hikari import telethn as tbot
