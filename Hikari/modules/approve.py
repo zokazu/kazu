@@ -1,11 +1,11 @@
 import html
-from Hiraki.modules.disable import DisableAbleCommandHandler
-from Hiraki import dispatcher, DRAGONS
-from Hiraki.modules.helper_funcs.extraction import extract_user
+from Hikari.modules.disable import DisableAbleCommandHandler
+from Hikari import dispatcher, DRAGONS
+from Hikari.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler
-import Hiraki.modules.sql.approve_sql as sql
-from Hiraki.modules.helper_funcs.chat_status import user_admin
-from Hiraki.modules.log_channel import loggable
+import Hikari.modules.sql.approve_sql as sql
+from Hikari.modules.helper_funcs.chat_status import user_admin
+from Hikari.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
