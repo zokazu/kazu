@@ -82,12 +82,12 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
- I'm an anime-theme management bot [ ](https://telegra.ph/file/2d22dc1fec0273ad7a0a2.jpg)
-
-� *Uptime:* `{}`
-� `{}` *users, across* `{}` *chats.*
-
- Hit /help to see my available commands.
+🌼 I'm an anime-theme management bot [🌼](https://telegra.ph/file/2d22dc1fec0273ad7a0a2.jpg)
+────────────────────────
+× *Uptime:* `{}`
+× `{}` *users, across* `{}` *chats.*
+────────────────────────
+🌼 Hit /help to see my available commands.
 """
 
 buttons = [
@@ -361,12 +361,12 @@ def emiko_about_callback(update, context):
     if query.data == "emiko_":
         query.message.edit_text(
             text=" I'm *Hikari Robot*, a powerful group management bot built to help you manage your group easily."
-            "\n� I can restrict users."
-            "\n� I can greet users with customizable welcome messages and even set a group's rules."
-            "\n� I have an advanced anti-flood system."
-            "\n� I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
-            "\n� I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
-            "\n� I check for admins' permissions before executing any command and more stuffs"
+            "\n I can restrict users."
+            "\n I can greet users with customizable welcome messages and even set a group's rules."
+            "\n I have an advanced anti-flood system."
+            "\n I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
+            "\n I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
+            "\n I check for admins' permissions before executing any command and more stuffs"
             "\n\n_Hikari's licensed under the GNU General Public License v3.0_"
             "\n\n Click on button bellow to get basic help for LordFamousRobot.",
             parse_mode=ParseMode.MARKDOWN,
@@ -475,17 +475,17 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="�� This advance command for Musicplayer."
+            text=" This advance command for Musicplayer."
             "\n\n Command for admins only."
-            "\n � `/reload` - For refreshing the adminlist."
-            "\n � `/pause` - To pause the playback."
-            "\n � `/resume` - To resuming the playback You've paused."
-            "\n � `/skip` - To skipping the player."
-            "\n � `/end` - For end the playback."
-            "\n � `/musicplayer <on/off>` - Toggle for turn ON or turn OFF the musicplayer."
+            "\n  `/reload` - For refreshing the adminlist."
+            "\n  `/pause` - To pause the playback."
+            "\n  `/resume` - To resuming the playback You've paused."
+            "\n  `/skip` - To skipping the player."
+            "\n  `/end` - For end the playback."
+            "\n  `/musicplayer <on/off>` - Toggle for turn ON or turn OFF the musicplayer."
             "\n\n Command for all members."
-            "\n � `/play` <query /reply audio> - Playing music via YouTube."
-            "\n � `/playlist` - To playing a playlist of groups or your personal playlist",
+            "\n  `/play` <query /reply audio> - Playing music via YouTube."
+            "\n  `/playlist` - To playing a playlist of groups or your personal playlist",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
