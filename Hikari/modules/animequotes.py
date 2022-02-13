@@ -4,7 +4,7 @@ import html
 import random
 import time
 
-from Hiakri import dispatcher
+from Hikari import dispatcher
 from Hikari.modules.disable import DisableAbleCommandHandler
 from Hikari.modules.helper_funcs.chat_status import (is_user_admin)
 from telegram.ext import (
