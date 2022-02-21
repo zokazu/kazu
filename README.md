@@ -19,7 +19,7 @@
 
 ### Easiest Way To Deploy On Heroku 
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Rexashh/HikariRobot/tree/test"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=UmV4YXNoaC9IaWthcmlSb2JvdCBtYWlu"> <img src="https://img.shields.io/badge/Deploy%20To%20Herokubot-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 ```
 BIG THANKS TO : OM TONIC
