@@ -9,9 +9,9 @@ APAKAH_STRING = ["Iya",
                  "Bisa jadi", 
                  "Mungkin Tidak",
                  "Tidak Mungkin",
-                 "Haru banget gua jawab?",
-                 "Pala bapak kau pecah",
-                 "Apa iya?",
+                 "Harus banget gua jawab?",
+                 "Apaansi nanya mulu lu",
+                 "Emang bener?",
                  "Mana gua tau ",
                  "Lu tanya gua, terus gua tanya siapa?"
                  ]
