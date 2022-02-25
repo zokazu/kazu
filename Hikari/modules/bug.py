@@ -46,10 +46,10 @@ async def bug(_, msg: Message):
     datetimes_fmt = "%d-%m-%Y"
     datetimes = datetime.utcnow().strftime(datetimes_fmt)
 
-    thumb = "https://telegra.ph/file/efc27dec817626cc95016.jpg"
+    thumb = "https://telegra.ph/file/6faf5b2d5b2be03e56410.jpg"
     
     bug_report = f"""
-**#BUG : ** **[Lord](https://t.me/Bukan_guudlooking)**
+**#BUG : ** **[Rexa](https://t.me/JustRex)**
 **From User : ** **{mention}**
 **User ID : ** **{user_id}**
 **Group : ** **{chat_username}**
@@ -64,7 +64,7 @@ async def bug(_, msg: Message):
     if user_id == owner:
         if bugs:
             await msg.reply_text(
-                f"❎ <b>How can be owner bot reporting bug idiot??</b>",
+                f"❎ <b>Lu yang bikin Lu yang lapor, Owner tolol!</b>",
             )
             return
         else:
