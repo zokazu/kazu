@@ -444,8 +444,8 @@ def prime_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/rexaprivateroom"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/tirexgugel"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/punyasejutaumat"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/alahsiaboiboii"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="prime_"),
@@ -458,14 +458,15 @@ def prime_about_callback(update, context):
 
     elif query.data == "prime_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Hikari</b>\n"
-            f"\nHere Developers Making The Hikari Robot",
+            text=f"<b>๏ Credis for Kazu</b>\n"
+            f"\nHere Developers Making The Kazu Robot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
                     InlineKeyboardButton(text="Rexa", url="t.me/JustRex"),
                     InlineKeyboardButton(text="Tonic", url="t.me/Bukan_guudlooking"),
+                    InlineKeyboardButton(text="Kazu", url="t.me/kazuinhere"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="prime_"),
