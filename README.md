@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://telegra.ph/file/7771bb2497ae0cce78ae4.jpg">
+  <img src="https://telegra.ph/file/3a0688ef26c90fdc706e7.jpg">
 </p>
 
-<h4><p align="center"> HIKARI ROBOT </p></h4>
+<h4><p align="center"> KAZU ROBOT </p></h4>
 
 <p align="center">Hikari Robot is a modular bot running on python3 with autobots theme and have a lot features.</p>
 
