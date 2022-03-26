@@ -93,11 +93,11 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="➕️ Add Hikari Robot to your group ➕️", url="t.me/HikariManageRobot?startgroup=true"
+            text="➕️ Add KAZU Robot to your group ➕️", url="t.me//kaazuuBot?startgroup=true"
         ),
     ],
     [
-        InlineKeyboardButton(text="Support", url="https://t.me/rexaprivateroom"
+        InlineKeyboardButton(text="Support", url="https://t.me/kazusupport"
         ),
         InlineKeyboardButton(
             text="TryInline", switch_inline_query_current_chat=""
@@ -116,7 +116,7 @@ Click on the button bellow to get description about specifics command."""
 PRIME_IMG = "https://telegra.ph/file/b9fa4e1360d0a872a3cd5.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @JustRex \
+ You can support the project by contacting @kazuinhere \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
