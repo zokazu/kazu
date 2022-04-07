@@ -11,7 +11,7 @@ from sys import argv
 from typing import Optional
 from telegram import __version__ as peler
 from platform import python_version as memek
-from Hikari import (
+from ZUKA import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -32,9 +32,9 @@ from Hikari import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from Hikari.modules import ALL_MODULES
-from Hikari.modules.helper_funcs.chat_status import is_user_admin
-from Hikari.modules.helper_funcs.misc import paginate_modules
+from ZUKA.modules import ALL_MODULES
+from ZUKA.modules.helper_funcs.chat_status import is_user_admin
+from ZUKA.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -82,18 +82,18 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-🌼 I'm an anime-theme management bot [🌼](https://telegra.ph/file/3a0688ef26c90fdc706e7.jpg)
+🖕 I'm an anime-theme management bot [🖕](https://telegra.ph/file/3a0688ef26c90fdc706e7.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
 ────────────────────────
-🌼 Hit /help to see my available commands.
+🖕 Hit /help to see my available commands.
 """
 
 buttons = [
         [
         InlineKeyboardButton(
-            text="➕️ Add KAZU Robot to your group ➕️", url="t.me//kaazuuBot?startgroup=true"
+            text="➕️ Add ZUKA Robot to your group ➕️", url="t.me//kaazuuBot?startgroup=true"
         ),
     ],
     [
@@ -113,7 +113,7 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-PRIME_IMG = "https://telegra.ph/file/b9fa4e1360d0a872a3cd5.jpg"
+PRIME_IMG = "https://telegra.ph/file/3a0688ef26c90fdc706e7.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @kazuinhere \
@@ -232,7 +232,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>Hi I'm Hikari Robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
+            f"<b>Hi I'm ZUKA Robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML
        )
 
@@ -411,7 +411,7 @@ def prime_about_callback(update, context):
     elif query.data == "prime_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, Hikari Robot now ready to manage your group."
+            "\nCongragulations, ZUJA Robot now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
