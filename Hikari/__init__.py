@@ -23,11 +23,11 @@ from ptbcontrib.postgres_persistence import PostgresPersistence
 StartTime = time.time()
 
 def get_user_list(__init__, key):
-    with open("{}/Hikari/{}".format(os.getcwd(), __init__), "r") as json_file:
+    with open("{}/KAZU/{}".format(os.getcwd(), __init__), "r") as json_file:
         return json.load(json_file)[key]
 
 # enable logging
-FORMAT = "[Hikari] %(message)s"
+FORMAT = "[ZUKA] %(message)s"
 logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
@@ -38,9 +38,9 @@ logging.getLogger("pyrogram").setLevel(logging.INFO)
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 
 LOGGER = logging.getLogger('[Hikari]')
-LOGGER.info("Hikari is starting. | An Hikari Robot Parts. | Licensed under GPLv3.")
+LOGGER.info("ZUKA is starting. | An ZUKA Robot Parts. | Licensed under GPLv3.")
 LOGGER.info("Not affiliated to other anime or Villain in any way whatsoever.")
-LOGGER.info("Project maintained by: github.com/Rexashh (t.me/JustRex)")
+LOGGER.info("Project maintained by: github.com/zokazu (t.me/kazuinhere)")
 
 # if version < 3.9, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 9:
@@ -134,7 +134,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from Hikari.config import Development as Config
+    from KAZU.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -299,7 +299,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from Hikari.modules.helper_funcs.handlers import (
+from KAZU.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
